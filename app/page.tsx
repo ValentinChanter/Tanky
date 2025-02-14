@@ -234,7 +234,7 @@ export default function Home() {
         </div>
         <div className='w-2/5 bg-white px-6 lg:px-7 xl:px-8 pt-4 lg:pt-8 xl:pt-10 pb-2 lg:pb-6 xl:pb-8 shadow-xl ring-1 ring-gray-900/5 rounded-lg'>
           <div className={`flex flex-col lg:flex-row justify-center w-full text-black py-2 xl:py-4 mb-4 lg:mb-8 xl:mb-12 text-sm lg:text-base xl:text-lg text-center`}>
-            <input type='text' className={`ip-input px-2 py-1 mr-4 lg:mr-8 text-right w-full lg:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4${ip || cannotConnect ? " hidden" : ""}`} value={inputIp} placeholder='127.0.0.1' pattern='^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$' onChange={(e) => setInputIp(e.target.value)}></input>
+            <input type='text' className={`ip-input px-2 py-1 mr-4 lg:mr-8 text-right w-full md:w-full lg:w-1/3 xl:w-1/4${ip || cannotConnect ? " hidden" : ""}`} value={inputIp} placeholder='127.0.0.1' pattern='^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$' onChange={(e) => setInputIp(e.target.value)}></input>
             <button className={`blue-button p-2 lg:px-4 lg:py-2 text-white mt-4 lg:mt-0 button${ip || cannotConnect ? " hidden" : ""}`} disabled={isConnecting} onClick={() => connect(inputIp)}>{isConnecting ? "Connecting..." : "Connect"}</button>
             <div className={`text-black ${ip ? "" : " hidden"}`}>
               <span>Connected to </span><span className='font-bold mr-4 lg:mr-8'>{ip}</span>
