@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.animated-background {
+  background-size: 200% 200%;
+  animation: gradient-animation 30s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.slider {
+  @apply
+  [&::-webkit-slider-thumb]:appearance-none 
+  [&::-webkit-slider-thumb]:h-5 
+  [&::-webkit-slider-thumb]:w-5 
+  [&::-webkit-slider-thumb]:rounded-full
+  [&:disabled::-webkit-slider-thumb]:bg-gray-400
+  [&::-webkit-slider-thumb]:bg-blue-300
+  [&::-webkit-slider-thumb]:shadow-md
+  w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer inset-shadow-sm disabled:cursor-not-allowed;
+}
+
+.button {
+  @apply rounded-full ring-1 ring-gray-900/5 cursor-pointer shadow-md
+  hover:shadow-xl hover:scale-105
+  active:shadow-none active:scale-95 active:inset-shadow-md
+  disabled:scale-100 disabled:shadow-md disabled:cursor-not-allowed disabled:bg-gray-400
+  disabled:hover:shadow-md disabled:hover:bg-gray-400
+  disabled:active:shadow-md disabled:active:bg-gray-400 disabled:inset-shadow-none;
+}
+
+.red-button {
+  @apply bg-red-500 hover:bg-red-400 active:bg-red-600  ;
+}
+
+.green-button {
+  @apply bg-green-500 hover:bg-green-400 active:bg-green-600;
+}
+
+.blue-button {
+  @apply bg-blue-400 hover:bg-blue-300 active:bg-blue-500;
+}
+
+.ip-input {
+  @apply active:outline-0 focus:outline-0 ring-1 ring-gray-900/5 bg-gray-100 inset-shadow-sm rounded-lg invalid:bg-red-200;
+}
+
+@theme {
+  --inset-shadow-md: inset 0 2px 3px rgba(0, 0, 0, 0.25); 
+}
