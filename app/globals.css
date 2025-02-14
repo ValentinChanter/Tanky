@@ -47,6 +47,14 @@ body {
   [&:disabled::-webkit-slider-thumb]:bg-gray-400
   [&::-webkit-slider-thumb]:bg-blue-300
   [&::-webkit-slider-thumb]:shadow-md
+  [&::-moz-range-thumb]:appearance-none 
+  [&::-moz-range-thumb]:h-5 
+  [&::-moz-range-thumb]:w-5 
+  [&::-moz-range-thumb]:rounded-full
+  [&:disabled::-moz-range-thumb]:bg-gray-400
+  [&::-moz-range-thumb]:bg-blue-300
+  [&::-moz-range-thumb]:shadow-md
+  [&::-moz-range-thumb]:outline-0
   w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer inset-shadow-sm disabled:cursor-not-allowed;
 }
 
