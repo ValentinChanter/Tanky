@@ -5,7 +5,9 @@
   "scripts": {
     "flask-dev": ".\\venv\\Scripts\\python -m flask --app api/index run -p 5328",
     "next-dev": "next dev",
-    "dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev\"",
+    "dev": "concurrently \"npm run next-dev\" \"npm run flask-dev\"",
+    "dev-pnpm": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev\"",
+    "dev-yarn": "concurrently \"yarn run next-dev\" \"yarn run flask-dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

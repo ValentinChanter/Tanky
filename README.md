@@ -23,7 +23,7 @@ It was made with [Next.js](https://nextjs.org/) for the frontend, [Flask](https:
 
 ## Requirements
 
-This app was tested with Node v22.14.0 and Python 3.11.7. \
+This app was tested with Node v22.14.0, Python 3.11.7, both npm and pnpm, and on Firefox and Opera. \
 As [Factory IO](https://factoryio.com) is a Windows-only app, this web app wasn't designed for Unix-based systems.
 
 ## Installation
@@ -76,9 +76,9 @@ As [Factory IO](https://factoryio.com) is a Windows-only app, this web app wasn'
     ```bash
     npm run dev
     # or
-    yarn dev
+    yarn dev-yarn
     # or
-    pnpm dev
+    pnpm dev-pnpm
     ```
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the app. The Flask server will be running on [http://127.0.0.1:5328](http://127.0.0.1:5328).
