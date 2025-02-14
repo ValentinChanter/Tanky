@@ -45,7 +45,7 @@ As [Factory IO](https://factoryio.com) is a Windows-only app, this web app wasn'
     pnpm install
     ```
 
-3. Create and switch to your virtual environment
+3. Create and switch to your virtual environment. Note that the `dev` script uses the venv specifically located in `./venv`
   
     ```bash
     python -m venv venv
