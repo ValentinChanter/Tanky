@@ -20,10 +20,11 @@ It was made with [Next.js](https://nextjs.org/) for the frontend, [Flask](https:
 - Customize the fill and drain rates in real-time
 - Real-time tank and flow levels using Websocket
 - Tank level visualization
+- Responsive design
 
 ## Requirements
 
-This app was tested with Node v22.14.0, Python 3.11.7, both npm and pnpm, and on Firefox and Opera. \
+This app was tested with Node v22.14.0, Python 3.11.7, both npm and pnpm, and on Firefox, Opera and Chrome (Android). \
 As [Factory IO](https://factoryio.com) is a Windows-only app, this web app wasn't designed for Unix-based systems.
 
 ## Installation
