@@ -272,7 +272,7 @@ export default function Home() {
             <div className='flex flex-col w-full lg:w-2/5 mb-4 lg:mb-0'>
               <span className='text-black text-left lg:text-right text-sm lg:text-base xl:text-lg pb-2'>Tank level</span>
               <div className='w-full flex flex-row justify-end'>
-                <span className='ring-1 ring-gray-900/5 bg-slate-700 pr-4 py-4 rounded-lg text-xl md:text-2xl lg:text-3xl text-right w-full xl:w-2/3 inset-shadow-md'>
+                <span className='ring-1 ring-gray-900/5 bg-slate-700 pr-4 py-4 rounded-lg text-white text-xl md:text-2xl lg:text-3xl text-right w-full xl:w-2/3 inset-shadow-md'>
                   {tankLevel/10}%
                 </span>
               </div>
@@ -280,7 +280,7 @@ export default function Home() {
             <div className='flex flex-col w-full lg:w-2/5'>
               <span className='text-black text-left text-sm lg:text-base xl:text-lg pb-2'>Flow level</span>
               <div className='w-full flex flex-row justify-start'>
-                <span className='ring-1 ring-gray-900/5 bg-slate-700 pr-4 py-4 rounded-lg text-xl md:text-2xl lg:text-3xl text-right w-full xl:w-2/3 inset-shadow-md'>
+                <span className='ring-1 ring-gray-900/5 bg-slate-700 pr-4 py-4 rounded-lg text-white text-xl md:text-2xl lg:text-3xl text-right w-full xl:w-2/3 inset-shadow-md'>
                   {flowLevel/10}%
                 </span>
               </div>
